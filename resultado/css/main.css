@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+}
+p {
+    font-size: 10em;
+}
+
+img {
+    display: none;
+    width: 135px;
+    animation-name: aparecer;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    margin-bottom: 20px;
+}
+
+#resultado {
+    display: none;
+    margin: 20px 0;
+    font-size: 2px;
+    animation-name: aparecer_text;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes aparecer {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes aparecer_text {
+
+    0% {
+        color: #fff;
+    }
+
+    100% {
+        color: #000;
+    }
+
+}
